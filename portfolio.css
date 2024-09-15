@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ body{
+    color: #ebebeb;
+ }
+
+ .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .logo{
+    font-size: 40px;
+    color: #ebebeb;
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+ }
+
+ .logo::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+  width: 100%;
+   height: 100%;
+background: #000;
+animation: showRight 1s ease forwards;
+animation-delay: 0.4ms;
+z-index: 2;
+ }
+
+ .navbar::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+  width: 100%;
+   height: 100%;
+background: #000;
+animation: showRight 1s ease forwards;
+animation-delay: 0.3ms;
+z-index: 2;
+ }
+   
+ .navbar a {
+    font-size: 25px;
+    color: #ebebeb;
+    text-decoration: none;
+   margin-left: 35px;
+    font-weight: 500;
+ }
+
+ .navbar a:hover,.navbar a.active{
+   color: #00abf0;
+ } 
+
+
+body{
+    background: url("image.folder/port.7.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 100px auto;
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+.container h1{
+    color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.inline-block {
+   display:flex;
+   border-radius: 5px;
+   margin: 10px 10px;
+   background-color: #f4f4f4;
+   border: 1px solid #ccc;
+   box-sizing: border-box; 
+   font-size: 16px;
+   flex-wrap: wrap;
+   height: 150px;
+   align-content: center;
+   flex-wrap: wrap;
+ display: inline-block;
+  }
+ 
+  .blocks{
+ display: inline-flex;
+ color: #000;
+ display: flex;
+ justify-content: center;
+  }
+    
+  .blocks-box{
+   display: inline-flex;
+   color: #000;
+   display: flex;
+   justify-content: center;
+  }
+
+
+  .inline-block {
+   float: left;
+   width:50%; 
+   padding: 10px; 
+  }
+
+
+
+ /* Animation Keyframes*/
+
+ @keyframes showRight{
+    100%{
+       width: 0%;
+    }
+  }

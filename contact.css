@@ -1,0 +1,157 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ body{
+    color: #ebebeb;
+ }
+
+ .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .logo{
+    font-size: 40px;
+    color: #ebebeb;
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+ }
+
+ .logo::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+  width: 100%;
+   height: 100%;
+background: #000;
+animation: showRight 1s ease forwards;
+animation-delay: 0.4ms;
+z-index: 2;
+ }
+
+ .navbar::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+  width: 100%;
+   height: 100%;
+background: #000;
+animation: showRight 1s ease forwards;
+animation-delay: 0.3ms;
+z-index: 2;
+ }
+   
+ .navbar a {
+    font-size: 25px;
+    color: #ebebeb;
+    text-decoration: none;
+   margin-left: 35px;
+    font-weight: 500;
+ }
+ 
+ .navbar a:hover,.navbar a.active{
+    color: #00abf0;
+  } 
+ 
+
+body{
+    background: url("image.folder/port.7.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 1000px;
+  margin: 100px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 60vh;
+}
+
+.container h4{
+    color: #000;
+}
+
+.container h2{
+    color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 5px 5px;
+}
+
+.container p{
+    color: #000;
+    padding: 5px 0;
+}
+.contact-list span{
+    color: #000;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ padding: 5px 5px;
+ width: 900px;
+  height: 30px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content{
+    position: relative;
+            display: block;
+            overflow: hidden;
+            border-radius: .25em;
+            padding: 5px 5px ;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
+            color: #000;
+            border: 1px solid black;
+            width: 900px;
+            height: 30px;
+         
+}
+
+.btn{
+    padding: 10px 20px;
+    color: white;
+    font-size: 10px;
+    margin: 5px 5px;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+
+/* Animation Keyframes*/
+
+@keyframes showRight{
+    100%{
+       width: 0%;
+    }
+  }
